@@ -4,6 +4,7 @@
     "config-opts": [
         "--disable-error-on-warning"
     ],
+    "rm-configure": true,
     "sources": [
         {
             "type": "archive",
@@ -14,6 +15,7 @@
             "type": "script",
             "dest-filename": "autogen.sh",
             "commands": [
+                "echo 'Regenerating build system'",
                 "AUTOMAKE='automake --foreign' autoreconf -vfi -I acinclude",
                 "libtoolize",
                 "cd guile-readline",

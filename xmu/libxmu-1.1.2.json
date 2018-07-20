@@ -11,6 +11,8 @@
         }
     ],
     "cleanup": [
+        "*.a",
+        "*.la",
         "/include",
         "/share/doc",
         "/lib/pkgconfig"

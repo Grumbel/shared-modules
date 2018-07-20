@@ -14,8 +14,13 @@
     "cleanup": [
         "*.a",
         "*.la",
+        "/bin/guile-config",
+        "/bin/guile-snarf",
+        "/bin/guile-tools",
         "/include",
         "/share/info",
+        "/share/man",
+        "/share/aclocal",
         "/lib/pkgconfig"
     ]
 }

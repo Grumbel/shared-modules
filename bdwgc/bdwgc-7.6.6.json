@@ -1,0 +1,20 @@
+{
+    "name": "bdwgc",
+    "buildsystem": "autotools",
+    "config-opts": [
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/ivmai/bdwgc.git",
+            "tag": "v7.6.6"
+        }
+    ],
+    "cleanup": [
+        "*.a",
+        "*.la",
+        "/include",
+        "/share/info",
+        "/lib/pkgconfig"
+    ]
+}

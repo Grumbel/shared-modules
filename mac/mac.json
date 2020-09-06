@@ -1,0 +1,23 @@
+{
+  "name": "libmac",
+  "no-autogen": true,
+  "rm-configure": true,
+  "make-install-args": [
+    "prefix=/app"
+  ],
+  "cleanup": [
+    "/include/MAC"
+  ],
+  "sources": [
+    {
+        "type": "archive",
+        "url": "https://freac.org/patches/MAC_SDK_554.zip",
+        "sha256": "931f744641cfeb5f173d2bb27df750e285c2e3c236e1ef0ac6c1ab75281550a3",
+        "strip-components": 0
+    },
+    {
+        "type": "patch",
+        "path": "mac-sdk-5.54-gcc.patch"
+    }
+  ]
+}

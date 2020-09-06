@@ -1,7 +1,7 @@
 {
   "name": "libappindicator",
   "build-options": {
-    "cflags": "-Wno-error=deprecated-declarations"
+    "cflags": "-Wno-error"
   },
   "rm-configure": true,
   "config-opts": [
@@ -30,12 +30,16 @@
       "path": "libappindicator-ftbfs.patch"
     },
     {
-      "type": "shell",
-      "commands": [
-        "# Disable python bindings",
-        "sed -e '/APPINDICATOR_PYTHON/,/\\$PYGTK_CODEGEN/ d' -i configure.ac",
-        "sed -e '/bindings/ d' -e '/example/ d' -i Makefile.am"
-      ]
+      "type": "patch",
+      "path": "libappindicator-no-python.patch"
+    },
+    {
+      "type": "patch",
+      "path": "libappindicator-fix-crash-from-incorrect-signal-emission.patch"
+    },
+    {
+      "type": "patch",
+      "path": "libappindicator-fix-crash-iterating-icon-themes.patch"
     },
     {
       "type": "script",
@@ -44,9 +48,12 @@
     }
   ],
   "modules": [
+    "../intltool/intltool-0.51.json",
+    "../dbus-glib/dbus-glib-0.110.json",
     {
       "name": "libdbusmenu",
       "build-options": {
+        "cflags": "-Wno-error",
         "env": {
           "HAVE_VALGRIND_FALSE": "#",
           "HAVE_VALGRIND_TRUE": ""
@@ -82,7 +89,7 @@
     {
       "name": "libindicator",
       "build-options": {
-        "cflags": "-Wno-error=deprecated-declarations"
+        "cflags": "-Wno-error"
       },
       "cleanup": [
         "/include",

@@ -1,0 +1,20 @@
+{
+    "name": "imagemagick",
+    "config-opts": [
+        "--enable-shared",
+        "--disable-static"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/ImageMagick/ImageMagick/archive/7.0.10-29.tar.gz",
+            "sha256": "7a3a3347e8b0dae2396663c879644cebcb8d4ed115645b4c9dba66494022b2fd"
+        }
+    ],
+    "cleanup": [
+        "/bin",
+        "/include",
+        "/lib/pkgconfig",
+        "/share"
+    ]
+}

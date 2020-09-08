@@ -1,0 +1,20 @@
+{
+    "name": "imagemagick",
+    "config-opts": [
+        "--enable-shared",
+        "--disable-static"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://imagemagick.org/download/releases/ImageMagick-6.9.11-29.tar.xz",
+            "sha256": "a26851d223fac5384ba030aeccd78f14938c32db34533e32f58f0c4c154602e9"
+        }
+    ],
+    "cleanup": [
+        "/bin",
+        "/include",
+        "/lib/pkgconfig",
+        "/share"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "gtkmm",
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://ftp.gnome.org/pub/GNOME/sources/gtkmm/3.24/gtkmm-3.24.2.tar.xz",
+            "sha256": "6d71091bcd1863133460d4188d04102810e9123de19706fb656b7bb915b4adc3"
+        }
+    ],
+    "config-opts": [
+        "--disable-documentation"
+    ],
+    "cleanup": [
+        "*.a",
+        "*.la",
+        "/include",
+        "/lib/gtkmm-3.0",
+        "/lib/gdkmm-3.0",
+        "/lib/pkgconfig"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "guile",
+    "buildsystem": "autotools",
+    "config-opts": [
+        "--disable-error-on-warning"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://ftp.gnu.org/gnu/guile/guile-3.0.4.tar.lz",
+            "sha256": "f2b0b66fd72bc24df76856e1549bf327c025b8a5d5fa3cb1696327c5941c89c4"
+        }
+    ],
+    "cleanup": [
+        "*.a",
+        "*.la",
+        "/bin/guile-config",
+        "/bin/guile-snarf",
+        "/bin/guile-tools",
+        "/include",
+        "/share/info",
+        "/share/man",
+        "/share/aclocal",
+        "/lib/pkgconfig"
+    ]
+}

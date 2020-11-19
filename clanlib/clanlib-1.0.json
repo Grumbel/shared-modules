@@ -8,7 +8,7 @@
         {
             "type": "git",
             "url": "https://gitlab.com/grumbel/clanlib-1.0.git",
-            "commit": "17fa39a5"
+            "commit": "c2f3e1c1e544b821c50b550b305dfcaec83c86f0"
         }
     ],
     "cleanup": [

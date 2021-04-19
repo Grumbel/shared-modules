@@ -1,0 +1,18 @@
+{
+    "name": "mpg123",
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://sourceforge.net/projects/mpg123/files/mpg123/1.26.5/mpg123-1.26.5.tar.bz2",
+            "sha256": "502a97e0d935be7e37d987338021d8f301bae35c2884f2a83d59c4b52466ef06"
+        }
+    ],
+    "config-opts": [
+    ],
+    "cleanup": [
+        "*.a",
+        "*.la",
+        "/include",
+        "/lib/pkgconfig"
+    ]
+}

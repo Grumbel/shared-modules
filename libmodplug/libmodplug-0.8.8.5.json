@@ -1,0 +1,18 @@
+{
+    "name": "libmodplug",
+    "sources": [
+        {
+            "type": "archive",
+            "url": "http://sourceforge.net/projects/modplug-xmms/files/libmodplug/0.8.8.5/libmodplug-0.8.8.5.tar.gz",
+            "sha256": "77462d12ee99476c8645cb5511363e3906b88b33a6b54362b4dbc0f39aa2daad"
+        }
+    ],
+    "config-opts": [
+    ],
+    "cleanup": [
+        "*.a",
+        "*.la",
+        "/include",
+        "/lib/pkgconfig"
+    ]
+}

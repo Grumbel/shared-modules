@@ -2,9 +2,11 @@
     "name": "glm",
     "buildsystem": "simple",
     "build-commands": [
+        "mkdir -p /app/include/",
         "cp -vr glm /app/include/",
         "rm -v /app/include/glm/CMakeLists.txt",
-        "cp -vr cmake/ /app/lib/"
+        "mkdir -p /app/lib/",
+        "cp -vr cmake /app/lib/"
     ],
     "sources": [
         {
